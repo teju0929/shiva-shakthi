@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Shiva Shakthi | Homemade Foods</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#fff8ed;
+    color:#3d2415;
+}
+
+header{
+    background:linear-gradient(135deg,#7b1e16,#e85d04);
+    color:white;
+    padding:18px 7%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:sticky;
+    top:0;
+    z-index:100;
+}
+
+.logo{
+    font-size:26px;
+    font-weight:bold;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+    font-weight:bold;
+}
+
+.hero{
+    min-height:520px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:60px 20px;
+    background:
+    linear-gradient(rgba(123,30,22,.75),rgba(232,93,4,.65)),
+    url("https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=1400&q=80");
+    background-size:cover;
+    background-position:center;
+    color:white;
+}
+
+.hero h1{
+    font-size:52px;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:20px;
+    margin-bottom:25px;
+}
+
+.btn{
+    display:inline-block;
+    background:#ffd166;
+    color:#4a2413;
+    padding:14px 28px;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:bold;
+    border:none;
+    cursor:pointer;
+}
+
+section{
+    padding:55px 7%;
+}
+
+.title{
+    text-align:center;
+    font-size:34px;
+    color:#8b2c20;
+    margin-bottom:35px;
+}
+
+.products{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 8px 25px rgba(0,0,0,.12);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-7px);
+}
+
+.card img{
+    width:100%;
+    height:190px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:20px;
+    text-align:center;
+}
+
+.card h3{
+    color:#9b2c20;
+    margin-bottom:8px;
+}
+
+.price{
+    font-size:20px;
+    font-weight:bold;
+    color:#e85d04;
+    margin:12px;
+}
+
+.about{
+    background:#fff0d5;
+    text-align:center;
+}
+
+.about p{
+    max-width:750px;
+    margin:auto;
+    line-height:1.7;
+    font-size:17px;
+}
+
+.order{
+    background:linear-gradient(135deg,#fff0d5,#ffe0b2);
+}
+
+form{
+    max-width:600px;
+    margin:auto;
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 8px 25px rgba(0,0,0,.12);
+}
+
+input,textarea,select{
+    width:100%;
+    padding:13px;
+    margin:9px 0 15px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    font-size:16px;
+}
+
+label{
+    font-weight:bold;
+}
+
+.submit{
+    width:100%;
+    background:#25D366;
+    color:white;
+    padding:15px;
+    border:none;
+    border-radius:30px;
+    font-size:17px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+footer{
+    background:#4a2413;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+@media(max-width:600px){
+    header{
+        flex-direction:column;
+        gap:10px;
+    }
+
+    nav a{
+        margin:0 7px;
+        font-size:14px;
+    }
+
+    .hero h1{
+        font-size:38px;
+    }
+
+    .hero p{
+        font-size:17px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">🌸 Shiva Shakthi</div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#products">Products</a>
+        <a href="#about">About</a>
+        <a href="#order">Order</a>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+    <div>
+        <h1>Shiva Shakthi</h1>
+        <p>❤️ Homemade Pickles & Traditional Sweets ❤️</p>
+        <p>Fresh • Homemade • Made With Love</p>
+        <br>
+        <a href="#products" class="btn">Explore Products</a>
+    </div>
+</section>
+
+<section id="products">
+
+    <h2 class="title">🥭 Our Homemade Products</h2>
+
+    <div class="products">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1601050690117-94f5f6fa8bd7?auto=format&fit=crop&w=600&q=80">
+            <div class="card-content">
+                <h3>Mango Pickle</h3>
+                <p>Traditional homemade mango pickle.</p>
+                <div class="price">Price – Contact Us</div>
+                <a href="#order" class="btn">Order Now</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1626132647523-66f5bf380027?auto=format&fit=crop&w=600&q=80">
+            <div class="card-content">
+                <h3>Lemon Pickle</h3>
+                <p>Homemade lemon pickle with traditional taste.</p>
+                <div class="price">Price – Contact Us</div>
+                <a href="#order" class="btn">Order Now</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1589119908995-c6837fa14848?auto=format&fit=crop&w=600&q=80">
+            <div class="card-content">
+                <h3>Homemade Sweets</h3>
+                <p>Fresh traditional sweets made at home.</p>
+                <div class="price">Price – Contact Us</div>
+                <a href="#order" class="btn">Order Now</a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="about" id="about">
+
+    <h2 class="title">🏠 About Shiva Shakthi</h2>
+
+    <p>
+        Welcome to Shiva Shakthi!
+        We prepare homemade pickles and traditional sweets
+        with care and love. Our goal is to bring the authentic
+        homemade taste directly to your home.
+    </p>
+
+</section>
+
+<section class="order" id="order">
+
+    <h2 class="title">🛒 Place Your Order</h2>
+
+    <form onsubmit="sendOrder(); return false;">
+
+        <label>Your Name</label>
+        <input type="text" id="name" placeholder="Enter your name" required>
+
+        <label>Phone Number</label>
+        <input type="tel" id="phone" placeholder="Enter phone number" required>
+
+        <label>Select Product</label>
+        <select id="product" required>
+            <option value="">Choose a product</option>
+            <option>Mango Pickle</option>
+            <option>Lemon Pickle</option>
+            <option>Homemade Sweets</option>
+        </select>
+
+        <label>Quantity</label>
+        <input type="number" id="quantity" min="1" placeholder="Enter quantity" required>
+
+        <label>Delivery Address</label>
+        <textarea id="address" rows="4" placeholder="Enter your address" required></textarea>
+
+        <button class="submit" type="submit">
+            💬 Order Through WhatsApp
+        </button>
+
+    </form>
+
+</section>
+
+<footer>
+    <p>© 2026 Shiva Shakthi Homemade Foods</p>
+    <p>Made with ❤️ at Home</p>
+</footer>
+
+<script>
+
+function sendOrder(){
+
+    let name = document.getElementById("name").value;
+    let phone = document.getElementById("phone").value;
+    let product = document.getElementById("product").value;
+    let quantity = document.getElementById("quantity").value;
+    let address = document.getElementById("address").value;
+
+    let message =
+    "🌸 SHIVA SHAKTHI ORDER 🌸%0A%0A" +
+    "Name: " + name + "%0A" +
+    "Phone: " + phone + "%0A" +
+    "Product: " + product + "%0A" +
+    "Quantity: " + quantity + "%0A" +
+    "Address: " + address;
+
+    /*
+      IMPORTANT:
+      Replace 91XXXXXXXXXX with your
+      WhatsApp business/mobile number.
+    */
+
+    let whatsappNumber = "91XXXXXXXXXX";
+
+    window.open(
+        "https://wa.me/" + whatsappNumber + "?text=" + message,
+        "_blank"
+    );
+}
+
+</script>
+
+</body>
+</html>
